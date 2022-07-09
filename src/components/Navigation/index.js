@@ -1,12 +1,19 @@
-function Navigation() {
+
+
+function Navigation(props) {
+    const {
+        navSelected,
+        setNavSelected
+    } = props;
     return(
         <nav>
             <ul>
-                <li>About</li>
-                <li>Project</li>
-                <li>Resume</li>
-                <li>Contact</li>
+                <li onClick={() => setNavSelected('About')}>About</li>
+                <li onClick={() => setNavSelected('Project')}>Project</li>
+                <li onClick={() => setNavSelected('Resume')}>Resume</li>
+                <li onClick={() => setNavSelected('Contact')}>Contact</li>
             </ul>
+
         </nav>
     );
 };
