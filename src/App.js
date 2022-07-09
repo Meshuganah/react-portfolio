@@ -10,20 +10,6 @@ import { useState } from 'react';
 
 
 function App() {
-// const [nav] = useState([
-//   {
-//     name: 'About'
-//   },
-//   {
-//     name: 'Project'
-//   },
-//   {
-//     name: 'Resume'
-//   },
-//   {
-//     name: 'Contact'
-//   }
-// ]);
 
   const [navSelected, setNavSelected] = useState('About');
 
@@ -44,12 +30,10 @@ function App() {
     <div>
       <Header></Header>
       <Navigation
-        //nav={nav}
         navSelected={navSelected}
         setNavSelected={setNavSelected}
       ></Navigation>
       <main>
-
         {render(navSelected)}
         <Footer></Footer>
       </main>
