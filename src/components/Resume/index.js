@@ -1,6 +1,14 @@
 function Resume() {
     return(
-        <div>Resume will go here</div>
+        <div>
+            <h3>
+            <a href={require('../../assets/resume.pdf')}
+                download
+            >
+              Resume  
+            </a>
+            </h3>
+        </div>
     );
 };
 
