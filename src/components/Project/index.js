@@ -54,20 +54,23 @@ function Project() {
     ])
 
     return (
-        <div>
-            <h3>Projects</h3>
-            <div>
+        <div className='text-light'>
+            <h3 className='text-center'>Projects</h3>
+            <div className='container d-flex flex-wrap'>
                 {projects.map((project) => (
-                    <div>
-                        <h4>{project.title}</h4>
-                        <h5>{project.category}</h5>
+                    <div className='card text-dark my-3 mx-auto col-4 '>
                         <img 
+                            className='card-img-top img'
                             src={require(`../../assets/projects/${project.photo}`)}
                             alt='Project Demo'
                         />
-                        <p>{project.description}</p>
-                        <a href={project.repo}>GitHub</a>
-                        <a href={project.liveLink}>Project Page</a>
+                        <h4 className='card-title text-center'>{project.title}</h4>
+                        <h5 className='card-subtitle text-center'>{project.category}</h5>
+                        <div className='card-body'>     
+                            <p className='card-text'>{project.description}</p>
+                                <button className='btn btn-primary mx-1'><a className='text-light' href={project.repo}>GitHub</a></button>
+                                <button className='btn btn-primary mx-1'><a className='text-light' href={project.liveLink}>Project Page</a></button>                      
+                        </div>
                     </div>
                 ))}               
             </div> 

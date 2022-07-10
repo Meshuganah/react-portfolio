@@ -2,7 +2,7 @@
 function Resume() {
     return(
         <div>
-            <h3>
+            <h3 className='text-light text-center'>
                 <a href={require('../../assets/resume.pdf')}
                     download
                 >
