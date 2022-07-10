@@ -2,7 +2,6 @@
 
 function Navigation(props) {
     const {
-        navSelected,
         setNavSelected
     } = props;
     return(
