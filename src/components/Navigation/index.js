@@ -7,11 +7,27 @@ function Navigation(props) {
     } = props;
     return(
         <nav>
-            <ul>
-                <li onClick={() => setNavSelected('About')}>About</li>
-                <li onClick={() => setNavSelected('Project')}>Project</li>
-                <li onClick={() => setNavSelected('Resume')}>Resume</li>
-                <li onClick={() => setNavSelected('Contact')}>Contact</li>
+            <ul className='d-flex flex-row navbar-nav'>
+                <li 
+                    className='nav-item mx-3 ' 
+                    onClick={() => setNavSelected('About')}>
+                        About
+                </li>
+                <li 
+                    className='nav-item mx-3' 
+                    onClick={() => setNavSelected('Project')}>
+                        Project
+                </li>
+                <li 
+                    className='nav-item mx-3' 
+                    onClick={() => setNavSelected('Resume')}>
+                        Resume
+                </li>
+                <li 
+                    className='nav-item mx-3' 
+                    onClick={() => setNavSelected('Contact')}>
+                        Contact
+                </li>
             </ul>
 
         </nav>

@@ -5,6 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('../src/assets/mountain-top.jpg');
+  background-size: cover;
+}
+
+.flex-duo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+
+#about-me article p {
+  font-size: 20px;
+  line-height: 1.3;
+  width: 30%;
+  margin: auto auto
+}
+
+
+.profile {
+  max-width: 400px;
+  max-height: 500px;
+  border-radius: 15px;
+  margin: 0 auto 0 auto;
 }
 
 code {

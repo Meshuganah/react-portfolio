@@ -28,11 +28,15 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-      <Navigation
-        navSelected={navSelected}
-        setNavSelected={setNavSelected}
-      ></Navigation>
+      <div className='text-light d-flex flex-row mx-3'>
+        <Header></Header>
+      </div>
+      <div className='text-light'>
+        <Navigation
+            navSelected={navSelected}
+            setNavSelected={setNavSelected}
+        ></Navigation>
+      </div>
       <main>
         {render(navSelected)}
         <Footer></Footer>
