@@ -35,7 +35,7 @@ function Contact() {
     return (
         <section>
             <h3 className="text-light text-center">Contact Me</h3>
-            <form className="text-light text-center" onSubmit={handleSubmit}>
+            <form className="text-light text-center" action="https://formsubmit.co/kleinjjosh74@gmail.com" method="POST" onSubmit={handleSubmit}>
                 <div className='my-2'>
                     <label htmlFor='name'>Name:</label>
                     <input type='text' name='name' onBlur={handleChange} defaultValue={name}/>
