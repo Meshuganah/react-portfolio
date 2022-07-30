@@ -4,6 +4,14 @@ function Project() {
 
     const [projects] = useState([
         {
+            title: 'Go Together',
+            category: 'Full Stack MERN Application',
+            description: 'Full stack web application using the MERN technology stack. Users may search for specific events, venues, or even cities for events, and add them to a calendar so they may see what they have going on in the future. There is also a social media aspect where users may search other users and see what events they have added to their calendar, and decide if they would like to go to that event as well.',
+            photo: 'go-together.JPG',
+            repo: 'https://github.com/Meshuganah/go-together',
+            liveLink: 'https://we-go-together.herokuapp.com/'
+        },
+        {
             title: 'Expense Tracker',
             category: 'Full Stack',
             description: 'Basic full stack application I worked on. Uses Mongodb and Mongoose. Allows users to create accounts, and track monthly expenses through a user friendly front end GUI.',
@@ -43,14 +51,14 @@ function Project() {
             repo: 'https://github.com/Meshuganah/weather-dashboard',
             liveLink: 'https://meshuganah.github.io/weather-dashboard/'
         },
-        {
-            title: 'Password Generator',
-            category: 'Basic JS',
-            description: 'An early project that will generate a password for users using JS.',
-            photo: 'Password-gen.JPG',
-            repo: 'https://github.com/Meshuganah/password-gen',
-            liveLink: 'https://meshuganah.github.io/password-gen/'
-        }
+        // {
+        //     title: 'Password Generator',
+        //     category: 'Basic JS',
+        //     description: 'An early project that will generate a password for users using JS.',
+        //     photo: 'Password-gen.JPG',
+        //     repo: 'https://github.com/Meshuganah/password-gen',
+        //     liveLink: 'https://meshuganah.github.io/password-gen/'
+        // }
     ])
 
     return (
