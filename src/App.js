@@ -1,4 +1,5 @@
 import About from './components/About';
+import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -17,6 +18,8 @@ function App() {
     switch(navSelected) {
       case 'About':
         return <About></About>
+      case 'Skills':
+        return <Skills></Skills>
       case 'Project':
         return <Project></Project>
       case 'Resume':

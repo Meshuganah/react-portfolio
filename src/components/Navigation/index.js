@@ -8,9 +8,14 @@ function Navigation(props) {
         <nav>
             <ul className='d-flex flex-row navbar-nav'>
                 <li 
-                    className='nav-item mx-3 ' 
+                    className='nav-item mx-3' 
                     onClick={() => setNavSelected('About')}>
                         About
+                </li>
+                <li
+                    className='nav-item mx-3'
+                    onClick={() => setNavSelected('Skills')}>
+                        Skills
                 </li>
                 <li 
                     className='nav-item mx-3' 
