@@ -9,7 +9,7 @@ function Project() {
             description: 'Full stack web application using the MERN technology stack. Users may search for specific events, venues, or even cities for events, and add them to a calendar so they may see what they have going on in the future. There is also a social media aspect where users may search other users and see what events they have added to their calendar, and decide if they would like to go to that event as well.',
             photo: 'go-together.JPG',
             repo: 'https://github.com/Meshuganah/go-together',
-            liveLink: 'https://we-go-together.herokuapp.com/'
+            liveLink: 'https://go-together.fly.dev/#/login'
         },
         {
             title: 'Expense Tracker',
